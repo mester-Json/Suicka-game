@@ -7,47 +7,49 @@ const render = Render.create({
   element: document.getElementById("matter-canvas"),
   options: {
     wireframes: false,
-    background: "blue",
+    background: "url(./public/fond.jpg) no-repeat center center fixed ",
+    backgroundSize: "cover",
     width: 620,
     height: 850,
   },
 });
 
 const world = engine.world;
-const ground = Bodies.rectangle(310, 820, 620, 60, {
+const ground = Bodies.rectangle(310, 840, 620, 30, {
   isStatic: true,
   render: {
-    fillStyle: 'red',
+    fillStyle: 'black',
   },
 });
 
-const leftwall = Bodies.rectangle(15, 395, 30, 790, {
+const leftwall = Bodies.rectangle(15, 395, 30, 860, {
   isStatic: true,
   render: {
-    fillStyle: 'red',
+    fillStyle: 'black',
   },
 });
 
-const rightwall = Bodies.rectangle(605, 395, 30, 790, {
+const rightwall = Bodies.rectangle(605, 395, 30, 860, {
   isStatic: true,
   render: {
-    fillStyle: 'red',
+    fillStyle: 'black',
   },
 });
 
-const topLigne = Bodies.rectangle(310, 150, 620, 2, {
+const topLigne = Bodies.rectangle(310, 50, 620, 2, {
   isStatic: true,
   isSensor: true,
   render: {
-    fillStyle: 'red',
+    fillStyle: 'black',
     label: top,
   },
 });
 
 World.add(world, [ground, leftwall, rightwall, topLigne]);
 
+const runner = Runner.create();
+Runner.run(runner, engine)
 Render.run(render);
-Runner.run(engine);
 
 let score = 0;
 let currentBody = null;
@@ -58,14 +60,13 @@ let disableAction = false;
 function addCurrentFruit() {
   const randomFruit = getRandomFruit();
 
-  const body = Bodies.circle(300, 50, randomFruit.radius, {
+  const body = Bodies.circle(200, 50, randomFruit.radius, {
     label: randomFruit.label,
     isSleeping: true,
     render: {
       fillStyle: randomFruit.color,
-      sprite: { texture: `/${randomFruit.label}.png` }
     },
-    restitution: 0.2,
+    restitution: 0.3,
   });
 
   currentBody = body;
@@ -144,7 +145,6 @@ Events.on(engine, "collisionStart", (event) => {
         {
           render: {
             fillStyle: newFruit.color,
-            sprite: { texture: `/${newFruit.label}.png` }
           },
           label: newFruit.label,
         }

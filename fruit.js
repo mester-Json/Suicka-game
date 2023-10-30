@@ -11,7 +11,7 @@ export const Fruits = [
   },
   {
     label: "grape",
-    radius: 72 / 2,
+    radius: 70 / 2,
     color: "#A969FF",
   },
   {
@@ -26,12 +26,12 @@ export const Fruits = [
   },
   {
     label: "apple",
-    radius: 140 / 2,
+    radius: 130 / 2,
     color: "#F41615",
   },
   {
     label: "pear",
-    radius: 160 / 2,
+    radius: 140 / 2,
     color: "#FDF176",
   },
   {

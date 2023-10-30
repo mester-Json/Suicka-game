@@ -30,14 +30,14 @@ body, h1, p {
   }
   
   #matter-canvas {
+    
     border: 2px solid #000;
   }
   
   #app {
     text-align: center;
   }
-  
-  /* Style the "game-container" div to control layout */
+
 .game-container {
     display: flex;
     justify-content: center;
@@ -45,18 +45,17 @@ body, h1, p {
     height: 100vh;
   }
   
-  /* Style the "future-fruits" div */
   #future-fruits {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px; /* Adjust the margin as needed */
+    margin-left: 20px; 
   }
   
-  /* Style for the future fruit images */
+
   .future-fruit {
-    width: 50px; /* Set the width as needed */
-    height: 50px; /* Set the height as needed */
-    margin: 5px; /* Adjust the margin as needed */
+    width: 50px; 
+    height: 50px; 
+    margin: 5px; 
   }
   
