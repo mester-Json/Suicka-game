@@ -27,28 +27,28 @@ const world = engine.world;
 const ground = Bodies.rectangle(310, 820, 800, 60, {
   isStatic: true,
   render: {
-    fillStyle: "#FF88A9",
+    fillStyle: "#f57196",
   },
 });
 
 const leftWall = Bodies.rectangle(15, 395, 30, 790, {
   isStatic: true,
   render: {
-    fillStyle: "#FF88A9",
+    fillStyle: "#f57196",
   },
 });
 
 const rightWall = Bodies.rectangle(685, 395, 30, 790, {
   isStatic: true,
   render: {
-    fillStyle: "#FF88A9",
+    fillStyle: "#f57196",
   },
 });
 
 const topLine = Bodies.rectangle(310, 100, 720, 2, {
   isStatic: true,
   isSensor: true,
-  render: { fillStyle: "#FF88A9" },
+  render: { fillStyle: "#f57196" },
   label: "topLine",
 });
 
@@ -137,6 +137,7 @@ window.onkeyup = (event) => {
       interval = null;
   }
 };
+
 
 Events.on(engine, "collisionStart", (event) => {
   event.pairs.forEach((collision) => {

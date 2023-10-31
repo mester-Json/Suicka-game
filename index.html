@@ -14,12 +14,15 @@
 <body>
   <nav>
     <h1>Bienvenu sur suika game </h1>
-    <i class="fa-regular fa-circle-pause"></i>
+    <i class="fa-regular fa-circle-pause" id="pause-button"></i>
   </nav>
   <div class="box">
     <div id="score">Score: 0</div>
   </div>
-
+  <div id="pause-menu" style="display: none;">
+    <button id="resume-button">Reprendre</button>
+    <button id="restart-button">Recommencer</button>
+  </div>
   <div class="game-container">
     <div class="game">
       <div id="app"></div>
@@ -27,6 +30,7 @@
     </div>
   </div>
   <script type="module" src="/main.js"></script>
+  <script type="module" src="/pause.js"></script>
 </body>
 
 </html>
