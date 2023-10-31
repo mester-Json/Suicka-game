@@ -4,22 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Suika Game</title>
 </head>
 
 <body>
   <nav>
-    <p>hello world</p>
+    <h1>Bienvenu sur suika game </h1>
+    <i class="fa-regular fa-circle-pause"></i>
   </nav>
-  <div id="score">Score: 0</div>
+  <div class="box">
+    <div id="score">Score: 0</div>
+  </div>
+
   <div class="game-container">
     <div class="game">
       <div id="app"></div>
       <div id="matter-canvas"></div>
     </div>
-    <div id="future-fruits"></div>
-    <script type="module" src="/main.js"></script>
+  </div>
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
