@@ -32,15 +32,15 @@ h1 {
 }
 
 .fa-circle-pause {
-  font-size:xx-large;
-  margin-top: 30px;
-  margin-left: 950px;
-    color: #fff;
-  text-shadow:  0 0 7px #fff, 
-           0 0 10px #fff, 
-           0 0 42px rgb(230, 18, 124),   
-           0 0 77px rgb(230, 18, 124), 
-           0 0 100px rgb(230, 18, 124) 
+ font-size: xx-large;
+ margin-top: 30px;
+ margin-left: 950px;
+ color: #fff;
+ text-shadow: 0 0 7px #fff, 
+              0 0 10px #fff, 
+              0 0 42px rgb(230, 18, 124),   
+              0 0 77px rgb(230, 18, 124), 
+              0 0 100px rgb(230, 18, 124);
 }
 
 
@@ -147,7 +147,7 @@ h1 {
 #RecentRecord1 , #RecentRecord2, #RecentRecord3  {
   font-size: 24px;
   color: #FF88A9;
-  margin-right: 120px;
+  margin-right: 142px;
   margin-top: 20px;
 }
 
