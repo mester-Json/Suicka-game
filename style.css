@@ -57,13 +57,14 @@ h1 {
 }
 #pause-menu {
   position: absolute;
-  top: 50%;
+  top: auto;
   left: 50%;
   width: 450px;
   height: 450px;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #000;
+  border: 2px solid #f57196 ;
+  border-radius: 5%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: none;
   z-index: 999;
@@ -115,8 +116,40 @@ h1 {
   font-size: 24px;
   color: #FF88A9;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
+.trait {
+    width: auto;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #f57196;
+}
+
+
+#BestScore {
+  font-size: 24px;
+  color: #FF88A9;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 120px;
+}
+
+.trait2 {
+  width: auto;
+  height: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  background-color: #f57196;
+}
+
+#RecentRecord1 , #RecentRecord2, #RecentRecord3  {
+  font-size: 24px;
+  color: #FF88A9;
+  margin-right: 120px;
+  margin-top: 20px;
+}
 
 @media (max-width: 768px) {
   .box {

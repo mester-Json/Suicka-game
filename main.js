@@ -51,7 +51,6 @@ const topLine = Bodies.rectangle(310, 100, 720, 2, {
   render: { fillStyle: "#f57196" },
   label: "topLine",
 });
-
 World.add(world, [ground, leftWall, rightWall, topLine]);
 
 Render.run(render);
@@ -74,6 +73,7 @@ function addCurrentFruit() {
     isSleeping: true,
     render: {
       fillStyle: randomFruit.color,
+
       //  sprite: { texture: `/${randomFruit.label}.svg` },
     },
     restitution: 0.2,
@@ -171,6 +171,7 @@ Events.on(engine, "collisionStart", (event) => {
       !disableAction
     ) {
       alert("Game over");
+      window.location.reload();
     }
   });
 });
