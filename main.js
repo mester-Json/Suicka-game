@@ -182,10 +182,10 @@ function updateScore() {
   scoreElement.textContent = `Score: ${score}`;
 }
 
-function resetScore() {
-  score = 0;
-  updateScore();
-}
+// function resetScore() {
+//   score = 0;
+//   updateScore();
+// }
 
 
 
