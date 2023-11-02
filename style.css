@@ -31,9 +31,9 @@ h1 {
            0 0 100px rgb(230, 18, 124) 
 }
 
-.fa-circle-pause {
- font-size: xx-large;
- margin-top: 30px;
+.fa-user {
+ font-size:60px;
+ margin-top: 20px;
  margin-left: 950px;
  color: #fff;
  text-shadow: 0 0 7px #fff, 
@@ -42,7 +42,6 @@ h1 {
               0 0 77px rgb(230, 18, 124), 
               0 0 100px rgb(230, 18, 124);
 }
-
 
 .box {
   background-color: #FFFFFF;
@@ -55,6 +54,7 @@ h1 {
   text-align: center;
   padding: 20px;
 }
+
 #pause-menu {
   position: absolute;
   top: auto;
@@ -86,18 +86,13 @@ h1 {
   background: #f57196;
 }
 
-
-#score {
-  font-weight: bold;
-}
-
 #matter-canvas {
   border: 25px solid #f57196;
   border-radius: 50px;
   box-shadow: 10px 20px 20px #888888;
 }
 
-.game-container {
+.matter-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +112,7 @@ h1 {
   color: #FF88A9;
   margin-top: 10px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .trait {
@@ -127,13 +123,13 @@ h1 {
     background-color: #f57196;
 }
 
-
 #BestScore {
-  font-size: 24px;
+  font-size: 20px;
   color: #FF88A9;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 120px;
+  font-weight: bold;
 }
 
 .trait2 {
@@ -145,10 +141,11 @@ h1 {
 }
 
 #RecentRecord1 , #RecentRecord2, #RecentRecord3  {
-  font-size: 24px;
+  font-size: 20px;
   color: #FF88A9;
   margin-right: 142px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

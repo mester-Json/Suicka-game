@@ -1,13 +1,15 @@
 import express from 'express';
+
 import mysql from 'mysql';
 
 const app = express();
 const port = 3000;
 
+
 const db = mysql.createConnection({
     host: 'localhost',
-    user: '',
-    password: '',
+    user: 'root',
+    password: '157326',
     database: 'Suika-game'
 });
 

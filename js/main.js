@@ -13,7 +13,8 @@ import { Fruits } from "./fruit";
 const engine = Engine.create();
 const render = Render.create({
   engine,
-  element: document.getElementById("matter-canvas"),
+  element: document.getElementById('matter-container'),
+  canvas: document.getElementById("matter-canvas"),
   options: {
     wireframes: false,
     background: "#F7F4C8",
@@ -62,9 +63,6 @@ let interval = null;
 let disableAction = false;
 let score = 0;
 
-
-
-
 function addCurrentFruit() {
   const randomFruit = getRandomFruit();
 
@@ -73,8 +71,6 @@ function addCurrentFruit() {
     isSleeping: true,
     render: {
       fillStyle: randomFruit.color,
-
-      //  sprite: { texture: `/${randomFruit.label}.svg` },
     },
     restitution: 0.2,
   });
@@ -94,6 +90,8 @@ function getRandomFruit() {
 
   return fruit;
 }
+
+
 
 window.onkeydown = (event) => {
   if (disableAction) return;
@@ -138,7 +136,6 @@ window.onkeyup = (event) => {
   }
 };
 
-
 Events.on(engine, "collisionStart", (event) => {
   event.pairs.forEach((collision) => {
     if (collision.bodyA.label === collision.bodyB.label) {
@@ -156,7 +153,6 @@ Events.on(engine, "collisionStart", (event) => {
         {
           render: {
             fillStyle: newFruit.color,
-            // sprite: { texture: `/${newFruit.label}.svg` },
           },
           label: newFruit.label,
         }
@@ -176,18 +172,9 @@ Events.on(engine, "collisionStart", (event) => {
   });
 });
 
-
-
 function updateScore() {
   const scoreElement = document.getElementById("score");
   scoreElement.textContent = `Score: ${score}`;
 }
-
-// function resetScore() {
-//   score = 0;
-//   updateScore();
-// }
-
-
 
 addCurrentFruit();
