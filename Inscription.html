@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./public/Inscription.style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Bienvenu sur suika game </h1>
+        <!--  <i class="fa-regular fa-user" id="pause-button"></i> 
+        <i class="fa-regular fa-circle-pause" id="pause-button"></i> -->
+    </nav>
+    <div class="box">
+        <h2>S'Inscrire</h2>
+        <form id="inscriptionForm">
+            <input type="text" name="UserName" id="UserName" placeholder="UserName">
+            <input type="date" name="Birthday" id="Birthday">
+            <input type="email" name="Mail" id="Mail" placeholder="Mail">
+            <input type="password" name="Password" id="Password" placeholder="Password">
+            <input type="password" name="RePassword" id="RePassword" placeholder="RePassword">
+            <input type="button" onclick="envoyerInscription()" value="Inscription">
+        </form>
+    </div>
+    <script src="./js/inscription.js"></script>
+</body>
+
+</html>

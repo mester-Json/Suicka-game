@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./fruit.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/fruit.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,6 +47,9 @@
   <div id="pause-menu" style="display: none;">
     <button id="resume-button">Reprendre</button>
     <button id="restart-button">Recommencer</button>
+    <button id="connexion" onclick="window.location.href = 'http://192.168.1.71:3000/connexion.html'">
+      Connexion
+    </button>
   </div>
   <div class="matter-container">
     <div class="game">
@@ -55,10 +57,10 @@
       <canvas id="matter-canvas"></canvas>
     </div>
   </div>
+  <script type="module" src="./js/matter.js"></script>
   <script type="module" src="./js/pause.js"></script>
-  <script type="module" src="./js/server.js"></script>
-  <script type="module" src="./js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./server.cjs"></script>
+
 </body>
 
 </html>

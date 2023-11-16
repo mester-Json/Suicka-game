@@ -1,15 +1,17 @@
 {
   "name": "suika-game",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "npm run dev",
+    "dev": "vite --host --port 3000",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.4.5"
+    "ts-node": "^10.9.1",
+    "vite": "^4.5.0"
   },
   "dependencies": {
     "express": "^4.18.2",

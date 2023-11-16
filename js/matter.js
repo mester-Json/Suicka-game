@@ -8,7 +8,7 @@ import {
   Sleeping,
   Events,
 } from "matter-js";
-import { Fruits } from "./fruit";
+import { Fruit } from "./fruit";
 
 const engine = Engine.create();
 const render = Render.create({
@@ -83,7 +83,7 @@ function addCurrentFruit() {
 
 function getRandomFruit() {
   const randomIndex = Math.floor(Math.random() * 5);
-  const fruit = Fruits[randomIndex];
+  const fruit = Fruit[randomIndex];
 
   if (currentFruit && currentFruit.label === fruit.label)
     return getRandomFruit();
@@ -140,12 +140,12 @@ Events.on(engine, "collisionStart", (event) => {
   event.pairs.forEach((collision) => {
     if (collision.bodyA.label === collision.bodyB.label) {
       World.remove(world, [collision.bodyA, collision.bodyB]);
-      const index = Fruits.findIndex(
+      const index = Fruit.findIndex(
         (fruit) => fruit.label === collision.bodyA.label
       );
-      if (index === Fruits.length - 1) return;
+      if (index === Fruit.length - 1) return;
 
-      const newFruit = Fruits[index + 1];
+      const newFruit = Fruit[index + 1];
       const body = Bodies.circle(
         collision.collision.supports[0].x,
         collision.collision.supports[0].y,
