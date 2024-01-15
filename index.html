@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/fruit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suika Game</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Bienvenu sur suika game </h1>
+        <i class="fa-regular fa-user" id="pause-button"></i>
+        <!--  <i class="fa-regular fa-circle-pause" id="pause-button"></i> -->
+    </nav>
+    <div class="box">
+        <div id="score">Score: 0</div>
+        <div class="trait"></div>
+        <div id="BestScore">Best Score:</div>
+        <div class="trait2"></div>
+        <div id="RecentRecord1"> 1 Record: </div>
+        <div id="RecentRecord2"> 2 Record: </div>
+        <div id="RecentRecord3"> 3 Record: </div>
+    </div>
+    <div class="container">
+        <div class="fruits">
+            <div class="circle">
+                <div class="fruit cherry"></div>
+                <div class="fruit strawberry"></div>
+                <div class="fruit grape"></div>
+                <div class="fruit kumkwat"></div>
+                <div class="fruit orange"></div>
+                <div class="fruit apple"></div>
+                <div class="fruit pear"></div>
+                <div class="fruit peach"></div>
+                <div class="fruit pineapple"></div>
+                <div class="fruit melon"></div>
+                <div class="fruit watermelon"></div>
+            </div>
+        </div>
+    </div>
+    <div id="pause-menu" style="display: none;">
+        <button id="resume-button">Reprendre</button>
+        <button id="restart-button">Recommencer</button>
+        <button id="connexion" onclick="window.location.href = 'http://localhost:5173/connexion.html' " />
+        Connexion
+        </button>
+
+
+    </div>
+    <div class=" matter-container">
+        <div class="game">
+            <div id="app"></div>
+            <canvas id="matter-canvas"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <script type="module" src="./js/game.js"></script>
+    <script type="module" src="./js/pause.js"></script>
+    <script src="./js/server.cjs"></script>
+
+</body>
+
+</html>

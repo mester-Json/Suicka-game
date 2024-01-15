@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./public/connexion.style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Bienvenu sur suika game </h1>
+        <!--  <i class="fa-regular fa-user" id="pause-button"></i> 
+      <i class="fa-regular fa-circle-pause" id="pause-button"></i> -->
+    </nav>
+    <div class="box">
+        <h2>Se connecter</h2>
+        <form action="" method="post">
+            <input type="text" name="UserName" id="UserName" placeholder="UserName">
+            <input type="email" name="Mail" id="Mail" placeholder="Mail">
+            <input type="password" name="Password" id="Password" placeholder="Password">
+            <input onclick="window.location.href = 'http://localhost:5173/connexion.html'" type="submit"
+                value="Connexion">
+        </form>
+        <a href="http://localhost:5173/inscription.html">
+            <p> Inscription </p>
+        </a>
+    </div>
+    <script src="./js/connexion.js"></script>
+</body>
+
+</html>

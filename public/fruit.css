@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vh; 
+    margin-right: 150px;
+  }
+
+  .fruits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+  .circle {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #FF88A9;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .fruit {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  .cherry {
+    background-color: #F20306;
+  }
+  
+  .strawberry {
+    background-color: #FF624C;
+  }
+  
+  .grape {
+    background-color: #A969FF;
+  }
+  
+  .kumkwat {
+    background-color: #FFAF02;
+  }
+  
+  .orange {
+    background-color: #FC8611;
+  }
+  
+  .apple {
+    background-color: #F41615;
+  }
+  
+  .pear {
+    background-color: #FDF176;
+  }
+  
+  .peach {
+    background-color: #FEB6AC;
+  }
+  
+  .pineapple {
+    background-color: #F7E608;
+  }
+  
+  .melon {
+    background-color: #89CE13;
+  }
+  
+  .watermelon {
+    background-color: #26AA1E;
+  }
+  
+.fruit:nth-child(1) { transform: translateX(100px); }
+.fruit:nth-child(2) { transform: rotate(36deg) translate(100px) rotate(-36deg); }
+.fruit:nth-child(3) { transform: rotate(72deg) translate(100px) rotate(-72deg); }
+.fruit:nth-child(4) { transform: rotate(108deg) translate(100px) rotate(-108deg); }
+.fruit:nth-child(5) { transform: rotate(144deg) translate(100px) rotate(-144deg); }
+.fruit:nth-child(6) { transform: rotate(180deg) translate(100px) rotate(-180deg); }
+.fruit:nth-child(7) { transform: rotate(216deg) translate(100px) rotate(-216deg); }
+.fruit:nth-child(8) { transform: rotate(252deg) translate(100px) rotate(-252deg); }
+.fruit:nth-child(9) { transform: rotate(288deg) translate(100px) rotate(-288deg); }
+.fruit:nth-child(10) { transform: rotate(324deg) translate(100px) rotate(-324deg); }
