@@ -1,5 +1,4 @@
 const { Engine, Render, Runner, World, Bodies, Body, Events, Sleeping } = Matter;
-
 import { Fruit } from "./fruit.js";
 
 const engine = Engine.create();
